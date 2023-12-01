@@ -100,6 +100,8 @@ function buildAndShowHomeHTML (categories) {
       document.querySelector("#main-content")
      .innerHTML= homeHtml;
      
+     
+
       // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
@@ -115,7 +117,7 @@ function buildAndShowHomeHTML (categories) {
       // syntax because the substitution of {{randomCategoryShortName}} becomes an argument
       // being passed into the $dc.loadMenuItems function. Think about what that argument needs
       // to look like. For example, a valid call would look something like this:
-       $dc.loadMenuItems('L');
+       //$dc.loadMenuItems('L');
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
       //
@@ -130,6 +132,8 @@ function buildAndShowHomeHTML (categories) {
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
 }
+
+
 
 // Given array of category objects, returns a random category object.
 function chooseRandomCategory (categories) {
